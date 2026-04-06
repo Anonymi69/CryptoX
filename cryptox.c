@@ -449,7 +449,7 @@ static void generate_key(const char* out_dir, const char* exe_dir) {
 
 static void print_usage(const char* exe) {
     char buf[512];
-    con_print("Usage: encryptor.exe [options] <path1> [path2] ...\n\n");
+    con_print("Usage: cryptox.exe [options] <path1> [path2] ...\n\n");
     con_print("Options:\n");
     con_print("  -k <hex_key>    64 hex characters (32 bytes) for AES-256-CBC\n");
     con_print("  -o <dir>        Directory to write files_list.txt and key.txt (default: exe dir)\n");
