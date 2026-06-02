@@ -1,6 +1,6 @@
 # CryptoX 🔐
 
-A high-performance **CLI-based file encryptor** for Windows, built in C using OpenSSL (AES-256-CBC).
+A high-performance **CLI-based file encryptor** for Windows, built in C using OpenSSL (AES-256-GCM).
 
 CryptoX is designed to **silently and efficiently encrypt files** using multithreading, making it suitable for batch processing and automation workflows where minimal user interaction is required.
 
@@ -16,7 +16,7 @@ If you find this project useful, consider giving it a ⭐ on GitHub — it helps
 
 * 🖥️ Command-line (CLI) tool — lightweight and scriptable
 * 🤫 **Silent operation** (minimal output unless attached to console)
-* 🔒 AES-256-CBC encryption (OpenSSL)
+* 🔒 AES-256-GCM encryption (OpenSSL)
 * ⚡ Multithreaded processing (auto scales with CPU cores)
 * 📁 Recursive directory scanning
 * 📦 Handles large files efficiently
@@ -101,7 +101,7 @@ cryptox.exe -d C:\Output\files_list.txt -k <your_hex_key>
 
 ## 🧠 How It Works
 
-* Uses AES-256-CBC with a random IV per file
+* Uses AES-256-GCM with a random IV per file
 * IV is stored at the beginning of each encrypted file
 * Multithreaded worker system processes files in parallel
 * Large files:
